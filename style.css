@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bgimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #00e676;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-section input[type="date"],
+.input-section input[type="time"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-section button {
+    background-color: #00e676;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+    background-color: #00b359;
+}
+
+.countdown-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.time-unit {
+    text-align: center;
+    flex: 1;
+}
+
+.time-unit span {
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 5px;
+}
+
+.time-unit p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin: 0;
+}
+
+#message {
+    margin-top: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .input-section input {
+        width: calc(100% - 30px);
+        margin-right: 0;
+    }
+    .countdown-display {
+        flex-wrap: wrap;
+    }
+    .time-unit {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .time-unit {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .time-unit span {
+        font-size: 2.5em;
+    }
+}
