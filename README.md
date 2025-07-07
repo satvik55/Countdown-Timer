@@ -23,6 +23,7 @@ JavaScript (Vanilla JS): For all interactive functionalities, including handling
 
 How to Set Up and Run Locally:
 Clone or Download the Repository:
+
 If you have Git installed, open your terminal or command prompt and run:
 
 git clone https://github.com/satvik55/Countdown-Timer.git
